@@ -12,6 +12,7 @@ class ComputeTime():
         self.answer_list = []
         self.question = data_dict["Question_list"]
         self.maximum_life = int(data_dict["Maximum_Life"])
+        self.kid_maximun_age = int(data_dict["Kid_Maximum_Age"])
         self.remaining_time = 0
         self.gender = ""
         self.shortage_in_year = 0
@@ -46,7 +47,7 @@ class ComputeTime():
         age_myself = self.__question__(0)
         age_myself_shortage = self.maximum_life - age_myself
         age_kid = self.__question__(1)
-        age_kid_shortage = 18 - age_kid
+        age_kid_shortage = self.kid_maximun_age - age_kid
         self.shortage_in_year = min(age_kid_shortage, age_myself_shortage)
         self.__compute_year_to_hour__()
         pass
