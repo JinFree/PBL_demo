@@ -3,7 +3,7 @@ import yaml
 
 def ReadConfigs(yaml_path):
     data_dict = {}
-    with open(yaml_path) as f:
+    with open(yaml_path, encoding='UTF8') as f:
         data_dict = yaml.load(f, Loader=yaml.FullLoader)
     return data_dict
 
