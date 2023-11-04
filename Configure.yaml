@@ -11,9 +11,10 @@ Kid_Maximum_Age:
 Maximum_Life:
   84
 Average:
-  sleep_hour: 8
-  moving_min: 40
-  working_hour: 8
-  relax_hour: 4
+  - 8 #sleep_hour
+  - 40 #moving_min
+  - 8 #working_hour
+  - 4 #relax_hour
+Out_Name: Report.xlsx
 
   
