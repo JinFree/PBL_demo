@@ -48,6 +48,9 @@ class ComputeTime():
         age_myself_shortage = self.maximum_life - age_myself
         age_kid = self.__question__(1)
         age_kid_shortage = self.kid_maximun_age - age_kid
+        if (age_kid_shortage < 0):
+            print("이 설문은 {} 세 이하의 자녀를 가진 부모를 대상으로 작성되었습니다.".format(self.kid_maximun_age))
+            exit()
         self.shortage_in_year = min(age_kid_shortage, age_myself_shortage)
         self.__compute_year_to_hour__()
         pass
