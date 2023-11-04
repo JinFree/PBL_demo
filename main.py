@@ -58,22 +58,22 @@ class ComputeTime():
     def __compute_q2__(self):
         hour_sleep = self.__question__(2)
         self.answer_list.append(hour_sleep)
-        self.shortage_in_hour = self.shortage_in_hour - hour_sleep * 365
+        self.shortage_in_hour = self.shortage_in_hour - hour_sleep * 365 * self.shortage_in_year
         pass
     def __compute_q3__(self):
         min_moving = self.__question__(3)
         self.answer_list.append(min_moving)
-        self.shortage_in_hour = self.shortage_in_hour - min_moving * 1.0 / 60.0 * 365
+        self.shortage_in_hour = self.shortage_in_hour - min_moving * 1.0 / 60.0 * 365 * self.shortage_in_year
         pass
     def __compute_q4__(self):
         hour_working = self.__question__(4)
         self.answer_list.append(hour_working)
-        self.shortage_in_hour = self.shortage_in_hour - hour_working * 365
+        self.shortage_in_hour = self.shortage_in_hour - hour_working * 365 * self.shortage_in_year
         pass
     def __compute_q5__(self):
         hour_relax = self.__question__(5)
         self.answer_list.append(hour_relax)
-        self.shortage_in_hour = self.shortage_in_hour - hour_relax * 365
+        self.shortage_in_hour = self.shortage_in_hour - hour_relax * 365 * self.shortage_in_year
         pass
     def __compute_q6__(self):
         hour_with_kid = self.__question__(6)
