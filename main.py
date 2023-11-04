@@ -74,8 +74,10 @@ class ComputeTime():
     def __compute_q6__(self):
         hour_with_kid = self.__question__(6)
         self.answer_list.append(hour_with_kid)
-        
         pass
+    
+    def __generate_report__(self):
+        pass 
         
         
         
@@ -87,7 +89,10 @@ class ComputeTime():
         self.__compute_q4__()
         self.__compute_q5__()
         self.__compute_q6__()
+        print("당신이 자녀와 함께 할 수 있는 시간은 총 {} 시간 남았습니다.".format(int(self.shortage_in_hour)))
         print("당신이 자녀와 함께 할 수 있는 시간은 총 {} 일 남았습니다.".format(int(self.shortage_in_hour / 24)))
+        print("당신이 자녀와 함께 할 수 있는 시간은 총 {} 년 남았습니다.".format(int(self.shortage_in_hour / (24 * 365))))
+
         pass
         
     
